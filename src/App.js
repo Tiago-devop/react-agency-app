@@ -1,10 +1,12 @@
+import Navbar from "./components/Navbar";
+
 import { GlobalStyle } from "./GlobalStyle";
 
 const App = () => (
-  <div>
-    <p>Hello world</p>
+  <>
+    <Navbar />
     <GlobalStyle />
-  </div>
+  </>
 );
 
 export default App;
