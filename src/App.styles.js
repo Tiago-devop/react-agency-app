@@ -1,17 +1,28 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
   height: 100vh;
   overflow: hidden;
+  position: relative;
 `;
 
-export const IntroShape = styled.div`
+export const Shape = css`
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  clip-path: polygon(100% 0, 79% 0, 52% 81%, 100% 81%);
+`;
+
+export const IntroShape = styled.div`
+  ${Shape}
+  clip-path: polygon(67% 0, 100% 0, 100% 100%, 55% 100%);
   background-color: crimson;
+`;
+
+export const FeatureShape = styled.div`
+  ${Shape}
+  clip-path: polygon(0 0, 55% 0, 33% 100%, 0 100%);
+  background-color: pink;
 `;
