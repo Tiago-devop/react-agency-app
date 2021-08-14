@@ -13,6 +13,7 @@ import {
 } from "./Intro.styles";
 
 import Woman from "../../img/woman.png";
+import AnimatedShapes from "../AnimatedShapes";
 
 const Intro = () => (
   <Container>
@@ -34,6 +35,7 @@ const Intro = () => (
     <Right>
       <Image src={Woman} alt="Photo by Julio Motta from Pexels" />
     </Right>
+    <AnimatedShapes />
   </Container>
 );
 
