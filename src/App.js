@@ -1,22 +1,32 @@
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
 import Feature from "./components/Feature";
+import Service from "./components/Service";
 
 import { GlobalStyle } from "./GlobalStyle";
-import { FeatureShape, IntroShape, Wrapper } from "./App.styles";
+import {
+  FeatureShape,
+  IntroShape,
+  Container,
+  ServiceShape,
+} from "./App.styles";
 
 const App = () => (
   <>
-    <Wrapper>
+    <Container>
       <Navbar />
       <Intro />
       <IntroShape />
-      <GlobalStyle />
-    </Wrapper>
-    <Wrapper>
+    </Container>
+    <Container>
       <Feature />
       <FeatureShape />
-    </Wrapper>
+    </Container>
+    <Container>
+      <Service />
+      <ServiceShape />
+    </Container>
+    <GlobalStyle />
   </>
 );
 
