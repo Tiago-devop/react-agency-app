@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  height: 100%;
 `;
 
 export const Left = styled.div`
@@ -9,7 +10,9 @@ export const Left = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 100%;
+  display: ${(props) => props.open && "none"};
+  height: 150%;
+  margin-left: 200px;
 `;
 
 export const Right = styled.div`
@@ -34,4 +37,24 @@ export const CardContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+`;
+
+export const Button = styled.button`
+  display: flex;
+  align-items: center;
+  width: 180px;
+  border: none;
+  border-radius: 30px;
+  background-color: darkblue;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  margin-top: 50px;
+  cursor: pointer;
+`;
+
+export const Icon = styled.img`
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 `;
