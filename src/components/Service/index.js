@@ -1,3 +1,6 @@
+import MiniCard from "../MiniCard";
+import How from "../../img/how.png";
+
 import {
   CardContainer,
   Container,
@@ -8,7 +11,6 @@ import {
   Title,
   Wrapper,
 } from "./Service.styles";
-import How from "../../img/how.png";
 
 const Service = () => (
   <Container>
@@ -25,7 +27,9 @@ const Service = () => (
           for you. Although we have a great resources
         </Description>
         <CardContainer>
-          
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
         </CardContainer>
       </Wrapper>
     </Right>

@@ -1,0 +1,19 @@
+import styled from "styled-components";
+
+export const Container = styled.div`
+  width: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
+`;
+
+export const Image = styled.img`
+  width: 20px;
+`;
+
+export const Text = styled.span`
+  margin-top: 10px;
+  text-align: center;
+`;
