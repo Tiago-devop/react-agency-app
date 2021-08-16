@@ -15,6 +15,7 @@ import {
   Left,
   Right,
   Title,
+  Video,
   Wrapper,
 } from "./Service.styles";
 
@@ -25,6 +26,13 @@ const Service = () => {
     <Container>
       <Left>
         <Image open={open} src={How} />
+        <Video
+          open={open}
+          autoPlay
+          loop
+          controls
+          src="https://vod-progressive.akamaized.net/exp=1629150685~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4951%2F17%2F449759244%2F1976509515.mp4~hmac=2ac1169516304e929da395131030172d46f21ed51850d3c3dc2c747a520dde74/vimeo-prod-skyfire-std-us/01/4951/17/449759244/1976509515.mp4?filename=production+ID%3A5150801.mp4"
+        />
       </Left>
       <Right>
         <Wrapper>

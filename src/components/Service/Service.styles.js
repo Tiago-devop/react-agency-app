@@ -6,6 +6,7 @@ export const Container = styled.div`
 `;
 
 export const Left = styled.div`
+  position: relative;
   width: 50%;
 `;
 
@@ -13,6 +14,16 @@ export const Image = styled.img`
   display: ${(props) => props.open && "none"};
   height: 150%;
   margin-left: 200px;
+`;
+
+export const Video = styled.video`
+  display: ${(props) => !props.open && "none"};
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 `;
 
 export const Right = styled.div`
