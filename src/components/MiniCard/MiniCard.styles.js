@@ -7,6 +7,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
+
+  @media only screen and (width: 480px) {
+    width: 50px;
+  }
 `;
 
 export const Image = styled.img`
@@ -16,4 +20,8 @@ export const Image = styled.img`
 export const Text = styled.span`
   margin-top: 10px;
   text-align: center;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 `;

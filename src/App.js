@@ -6,7 +6,6 @@ import Price from "./components/Price";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-import { GlobalStyle } from "./GlobalStyle";
 import {
   FeatureShape,
   IntroShape,
@@ -15,31 +14,34 @@ import {
   PriceShape,
 } from "./App.styles";
 
-const App = () => (
-  <>
-    <Container>
-      <Navbar />
-      <Intro />
-      <IntroShape />
-    </Container>
-    <Container>
-      <Feature />
-      <FeatureShape />
-    </Container>
-    <Container>
-      <Service />
-      <ServiceShape />
-    </Container>
-    <Container>
-      <Price />
-      <PriceShape />
-    </Container>
-    <Container>
-      <Contact />
-      <Footer />
-    </Container>
-    <GlobalStyle />
-  </>
-);
+const App = () => {
+  const smallScreen = window.screen.width <= 480 ? true : false;
+
+  return (
+    <>
+      <Container>
+        <Navbar />
+        <Intro />
+        <IntroShape />
+      </Container>
+      <Container>
+        <Feature />
+        <FeatureShape />
+      </Container>
+      <Container>
+        <Service />
+        {!smallScreen && <ServiceShape />}
+      </Container>
+      <Container>
+        <Price />
+        <PriceShape />
+      </Container>
+      <Container>
+        <Contact />
+        <Footer />
+      </Container>
+    </>
+  );
+};
 
 export default App;

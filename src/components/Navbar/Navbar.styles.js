@@ -26,6 +26,10 @@ export const Logo = styled.h1`
 export const Menu = styled.ul`
   display: flex;
   list-style: none;
+
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const MenuItem = styled.li`

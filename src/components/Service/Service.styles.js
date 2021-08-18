@@ -3,11 +3,19 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   height: 100%;
+
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const Left = styled.div`
   position: relative;
   width: 50%;
+
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const Image = styled.img`
@@ -28,12 +36,20 @@ export const Video = styled.video`
 
 export const Right = styled.div`
   width: 50%;
+
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const Wrapper = styled.div`
   padding: 50px;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 480px) {
+    padding: 20px;
+  }
 `;
 
 export const Title = styled.h1``;
@@ -68,4 +84,13 @@ export const Icon = styled.img`
   width: 20px;
   height: 20px;
   margin-right: 10px;
+`;
+
+export const Modal = styled.div`
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 `;
