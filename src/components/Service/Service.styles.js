@@ -32,6 +32,10 @@ export const Video = styled.video`
   bottom: 0;
   right: 0;
   margin: auto;
+
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const Right = styled.div`
@@ -93,4 +97,14 @@ export const Modal = styled.div`
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
+`;
+
+export const CloseButton = styled.button`
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 30px;
+  right: 5px;
+  top: 30px;
 `;
