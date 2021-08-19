@@ -18,7 +18,7 @@ export const Left = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 80%;
+  width: 50%;
 `;
 
 export const Right = styled.div`
