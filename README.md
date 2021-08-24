@@ -1,4 +1,4 @@
-# React App with Movie data base
+# React App with Styled Components
 
 ## Used tools
 - React
